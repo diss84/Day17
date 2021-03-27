@@ -1,13 +1,16 @@
+const { remove } = require("lodash");
+
 const array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function removeFirstTwo(list) {
     "use strict";
     // Only change code below this line
-
-    const array2 = array1.slice(2, 10); // Change this line
-
+    const [a, b, ...array1] = list;
+    
+    const array2 = [...array1] ; // Change this line
     // Only change code above this line
     return array2;
 }
 console.log(removeFirstTwo(array1));
+
 module.exports = removeFirstTwo;
