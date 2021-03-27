@@ -5,10 +5,9 @@ const MY_CAR = {
 };
 function main(myCar) {
     // Only change code below this line
- 
     const {cylinders, size} = MY_CAR;
     return {cylinders ,size};
     // Only change code above this line
 }
-
 console.log(main(MY_CAR));
+module.exports = main;
